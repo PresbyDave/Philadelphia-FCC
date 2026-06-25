@@ -448,14 +448,25 @@ h3 {
   min-width: min(100%, 360px);
 }
 
-.sermons-section::after {
-  content: "Announcements\A\A Stay informed with the latest updates and important information for the congregation.";
-  white-space: pre-wrap;
+.sermons-section .container::after {
+  content: "Announcements";
   display: block;
-  width: min(820px, calc(100% - 40px));
+  width: min(820px, calc(100vw - 40px));
   margin: 86px auto 0;
   padding-top: 86px;
   border-top: 1px solid rgba(223, 207, 173, 0.32);
+  color: #f7f1e6;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+
+.sermons-section::after {
+  content: "Stay informed with the latest updates and important information for the congregation.";
+  display: block;
+  width: min(820px, calc(100% - 40px));
+  margin: 26px auto 0;
   color: #f5ead6;
   font-size: clamp(1.2rem, 2.8vw, 1.65rem);
   line-height: 1.6;
@@ -601,10 +612,14 @@ h3 {
     margin-bottom: 18px;
   }
 
-  .sermons-section::after {
+  .sermons-section .container::after {
     width: min(100% - 28px, 820px);
     margin-top: 62px;
     padding-top: 62px;
+  }
+
+  .sermons-section::after {
+    width: min(100% - 28px, 820px);
   }
 }
 
