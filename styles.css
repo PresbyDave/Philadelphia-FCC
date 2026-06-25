@@ -448,6 +448,20 @@ h3 {
   min-width: min(100%, 360px);
 }
 
+.sermons-section::after {
+  content: "Announcements\A\A Stay informed with the latest updates and important information for the congregation.";
+  white-space: pre-wrap;
+  display: block;
+  width: min(820px, calc(100% - 40px));
+  margin: 86px auto 0;
+  padding-top: 86px;
+  border-top: 1px solid rgba(223, 207, 173, 0.32);
+  color: #f5ead6;
+  font-size: clamp(1.2rem, 2.8vw, 1.65rem);
+  line-height: 1.6;
+  text-align: center;
+}
+
 .site-footer {
   padding: 54px 0;
   color: #f5ead6;
@@ -585,6 +599,12 @@ h3 {
   .sermons-icon {
     width: 110px;
     margin-bottom: 18px;
+  }
+
+  .sermons-section::after {
+    width: min(100% - 28px, 820px);
+    margin-top: 62px;
+    padding-top: 62px;
   }
 }
 
