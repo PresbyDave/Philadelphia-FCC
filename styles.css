@@ -139,16 +139,16 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 330px 1fr;
+  grid-template-columns: 275px 1fr;
   align-items: center;
-  gap: 58px;
+  gap: 50px;
 }
 
 .hero-logo-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28px;
+  padding: 0;
   background: transparent;
   border: none;
   border-radius: 0;
@@ -158,12 +158,10 @@ a {
 .hero-logo {
   display: block;
   width: 100%;
-  max-width: 290px;
+  max-width: 250px;
   height: auto;
   border-radius: 0;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
-}
-
 }
 
 .hero-content {
@@ -427,11 +425,11 @@ h3 {
 
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 34px;
   }
 
   .hero-logo-card {
-    width: min(310px, 100%);
+    width: min(260px, 100%);
   }
 
   .belief-grid {
@@ -461,38 +459,6 @@ h3 {
     font-size: 0.84rem;
   }
 
-  .hero h1 {
-    font-size: 2.55rem;
-  }
-
-  .hero-logo-card {
-    padding: 20px;
-  }
-
-  .hero-logo {
-    max-width: 220px;
-  }
-
-  .service-time,
-  .hero-buttons,
-  .button {
-    width: 100%;
-  }
-
-  .section {
-    padding: 62px 0;
-  }
-
-  .belief-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .belief-card,
-  .visit-card {
-    padding: 24px;
-  }
-}
-@media (max-width: 620px) {
   .hero {
     padding: 42px 0 54px;
   }
@@ -503,12 +469,11 @@ h3 {
 
   .hero-logo-card {
     width: 100%;
-    padding: 18px;
-    border-radius: 24px;
+    padding: 0;
   }
 
   .hero-logo {
-    max-width: 210px;
+    max-width: 190px;
   }
 
   .eyebrow {
@@ -532,23 +497,23 @@ h3 {
   .service-time {
     margin-top: 26px;
   }
-}
-.hero-logo-card {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-}
 
-.hero-logo {
-  border-radius: 0 !important;
-  max-width: 310px;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5));
-}
+  .service-time,
+  .hero-buttons,
+  .button {
+    width: 100%;
+  }
 
-@media (max-width: 620px) {
-  .hero-logo {
-    max-width: 230px;
+  .section {
+    padding: 62px 0;
+  }
+
+  .belief-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .belief-card,
+  .visit-card {
+    padding: 24px;
   }
 }
