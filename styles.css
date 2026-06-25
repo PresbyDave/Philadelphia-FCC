@@ -533,3 +533,22 @@ h3 {
     margin-top: 26px;
   }
 }
+.hero-logo-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.hero-logo {
+  border-radius: 0 !important;
+  max-width: 310px;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 620px) {
+  .hero-logo {
+    max-width: 230px;
+  }
+}
